@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js"></script>
+</head>
+<body>
+    <!-- NavBar -->
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                <img src="asset/logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html" class="list-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="myproject.html">My project</a>
+                    </li>
+                </ul>    
+            </div>        
+            <div class="right-side">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+    <!--Contact-->
+        <div>
+            <body background="lightgray">
+                <h2 style="
+                    margin: auto;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    text-align: center;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    ">GET IN TOUCH
+                </h2>
+                <div class="container-form">
+                    <form style="
+                        width: 600px;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-left: 30%;
+                        margin-right: 30%;
+                        ">
+                        <div style="margin-bottom: 20px;">
+                        </div>
+                        <div>
+                            <label for="input-name" style="
+                                font-size: 18px;
+                                font-weight: 700;
+                                font-family: 'Poppins', sans-serif;
+                                ">Name
+                            </label>
+                            <br>
+                            <input type="text" id="input-name" style="
+                                Width: 600px;
+                                font-size: 18px;
+                                background-color: white;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border: 1px solid gray;
+                                margin-bottom: 10px;
+                                box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
+                                ">
+                        </div>
+                        <div>
+                            <br>
+                            <label for="input-email" style="
+                                font-size: 18px;
+                                font-weight: 700;
+                                font-family: 'Poppins', sans-serif;
+                                ">Email
+                            </label>
+                            <br>
+                            <input type="email" id="input-email" style="
+                                Width: 600px;
+                                font-size: 18px;
+                                background-color: white;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border: 1px solid gray;
+                                margin-bottom: 10px;
+                                box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
+                                ">
+                        </div>
+                        <div>
+                            <br>
+                            <label for="input-phone" style="
+                            font-size: 18px;
+                            font-weight: 700;
+                            font-family: 'Poppins', sans-serif;
+                            ">Phone Number
+                            </label>
+                            <br>
+                            <input type="text" id="input-phone" style="
+                                Width: 600px;
+                                font-size: 18px;
+                                background-color: white;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border: 1px solid gray;
+                                margin-bottom: 10px;
+                                box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
+                                ">
+                        </div>
+                        <div>
+                            <br>
+                            <label for="select-subject" style="
+                            font-size: 18px;
+                            font-weight: 700;
+                            font-family: 'Poppins', sans-serif;
+                            ">Subject
+                            </label>
+                            <br>
+                            <select id="select-subject" style="
+                                Width: 600px;
+                                font-size: 18px;
+                                background-color: white;
+                                border-radius: 10px;
+                                padding: 15px;
+                                border: 1px solid gray;
+                                margin-bottom: 10px;
+                                box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
+                                ">
+                            <option value="I'm Hiring">I'm Hiring</option>
+                            <option value="Let's Collaboration">Let's Collaboration</option>
+                            <option value="Let's Talk">Let's Talk</option>
+                            </select>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="input-message" style="
+                            font-size: 18px;
+                            font-weight: 700;
+                            font-family: 'Poppins', sans-serif;
+                            ">Your Message
+                            </label>
+                            <br>
+                            <textarea id="input-message" style="
+                                Width: 600px;
+                                font-size: 18px;
+                                justify-content: center;
+                                align-items: center;
+                                display: flex;
+                                background-color: white;
+                                border-radius: 10px;
+                                padding: 15px;
+                                height: 150px;
+                                border: 1px solid gray;
+                                margin-top; 10px;
+                                box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
+                                resize : none;
+                                ">
+                            </textarea>
+                        </div>
+                        <div>
+                            <br>
+                            <button style="
+                                color: whitesmoke;
+                                width: 150px;
+                                height: 35px;
+                                background-color: black;
+                                border-radius: 20px;
+                                border: 1px solid black;
+                                box-sizing: border-box;
+                                margin-top: 30px;
+                                margin-bottom: 50px;
+                                margin-left: 75%;
+                                font-size: 14px;
+                                font-weight: 700;
+                                font-family: 'Poppins', sans-serif;"
+                                onclick="submitForm()" 
+                                type="button">Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+        </div>    
+</body>
+
+</html>

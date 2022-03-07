@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar -->
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                <img src="asset/logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html" class="list-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="myproject.html">My Project</a>
+                    </li>
+                </ul>    
+            </div>        
+            <div class="right-side">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+    <div>
+    <div class="background-project">
+        <!--Add My Project-->
+        <div>
+            <div class="add-my-project">
+                <h1>ADD MY PROJECT
+                </h1>
+                <div class="container-form">
+                    <form onsubmit="addProject(event)"> 
+                        <label for="project-name">Project Name
+                        </label>
+                        <br>
+                        <div class="input-project-name">
+                            <input type="text" class="project-name" id="project-name">
+                        </div>
+                        <div class="date">
+                            <div class="start-date">
+                                <label for="start-date">Start Date
+                                    <br>
+                                </label>
+                                <input type="date" id="start-date">
+                            </div>        
+                            <div class="end-date">
+                                <label for="end-date">End Date
+                                </label>
+                                <br>
+                                <input type="date" id="end-date">
+                            </div>
+                        </div>        
+                        <br>
+                        <div class="description">
+                        <label for="description">Description
+                        </label>
+                        <br>
+                        <textarea id="description">  
+                        </textarea>
+                        <label for="technologies">Technologies
+                        </label>
+                        <br>
+                        <div class="technologies">
+                            <div class="node-js">
+                                <input type="checkbox"><span style="margin-left: 10px;">Node Js
+                            </div>
+                            <div class="next-js">    
+                                <input type="checkbox"><span style="margin-left: 10px;">Next Js
+                            </div>        
+                            <div class="react-js">
+                                <input type="checkbox"><span style="margin-left: 10px;">React Js
+                            </div>
+                            <div class="type-script">
+                                <input type="checkbox"><span style="margin-left: 10px;">TypeScript
+                            </div>
+                        </div>
+                        <br>    
+                        <label for="upload-image">Upload Image
+                        </label>
+                        <div class="upload-image">
+                            <label for="input-project-image">
+                            <p>
+                            <input type="file" id="input-project-image" hidden>Choose
+                            </p>
+                            <img src="asset/file.png" alt="file">
+                            </label>
+                        </div>
+                        <br>
+                        <div class="button-group">
+                            <button type="button" onclick="addProject(event)">Submit</button>
+                        </div>
+                    </form>
+                </div>        
+            </div>
+        </div>
+        <!--My Project-->
+        <div>
+            <div class="my-project">
+                <h1> MY PROJECT</h1>
+                <div class="project-list" id="contents">
+        <!-- Project content -->
+                    <div class="project-list-item"> 
+                        <div class="project-image">
+                            <img src="asset/mobileapp.jpeg" alt="mobileapp" />
+                        </div>
+                        <div class="project-content">
+                            <h3>
+                            <a href="project-detail.html" target="_blank"
+                            >Dumbways Mobile App -2021</a>
+                            </h3>
+                        </div>    
+                        <div class="detail-project-content">
+                            <h5>durasi : 3 bulan
+                            </h5>
+                            <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download 
+                            </p>
+                        </div>    
+                        <div class="project-technologies">
+                        <div>
+                            <img src="asset/playstore.png">
+                            <img src="asset/android.png">
+                            <img src="asset/java.png">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">edit</button>
+                            <button class="btn-delete">delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    </div>
+    <script src="myproject.js"></script>
+</body>
+</html>
