@@ -146,12 +146,12 @@ border-radius: 5px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.add-my-project .container-form {
+.container-form {
   justify-content: center;
   display: flex;
 }
 
-.add-my-project .container-form form {
+.container-form form {
   width: 600px;
   align-items: center;
   margin-top: 20px;
@@ -161,7 +161,7 @@ border-radius: 5px;
   font-family: poppins;
 }
 
-.add-my-project .container-form form .input-project-name .project-name {
+.project-name {
   Width: 600px;
   font-size: 18px;
   background-color: white;
@@ -172,15 +172,15 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);  
 }
 
-.add-my-project .container-form form .date {
+.date {
   display: flex;
 }
 
-.add-my-project .container-form form .date .start-date {
+.start-date {
   flex: 1;                    
 }
 
-.add-my-project .container-form form .date .start-date input {
+.start-date input {
   width: 295px;
   font-size: 18px;
   background-color: white;
@@ -191,12 +191,12 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
 
-.add-my-project .container-form form .date .end-date {
+.end-date {
   margin-left: 10px;
   flex: 1;
 }
 
-.add-my-project .container-form form .date .end-date input {
+.end-date input {
   width: 295px;
   font-size: 18px;
   background-color: white;
@@ -207,7 +207,7 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
 
-.add-my-project .container-form form .description textarea {
+.description textarea {
   width: 100%;
   height: 200px;
   font-size: 18px;
@@ -219,17 +219,17 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
   resize: none;
 }
-.add-my-project .container-form form .technologies {
+.technologies {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.add-my-project .container-form form .technologies .node-js {
+.node-js {
   flex: 50%;
 }
 
-.add-my-project .container-form form .technologies .node-js input {
+.node-js input {
   background-color: white;
   border-radius: 5px;
   width: 15px;
@@ -241,11 +241,11 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
 
-.add-my-project .container-form form .technologies .next-js {
+.next-js {
   flex: 50%;
 }
 
-.add-my-project .container-form form .technologies .next-js input {
+.next-js input {
   background-color: white;
   border-radius: 5px;
   width: 15px;
@@ -257,11 +257,11 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
 
-.add-my-project .container-form form .technologies .react-js {
+.react-js {
   flex: 50%;
 }
 
-.add-my-project .container-form form .technologies .react-js input {
+.react-js input {
   background-color: white;
   border-radius: 5px;
   width: 15px;
@@ -273,11 +273,11 @@ border-radius: 5px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
 
-.add-my-project .container-form form .technologies .type-script {
+.type-script {
   flex: 50%;
 }
 
-.add-my-project .container-form form .technologies .type-script input {
+.type-script input {
   background-color: white;
   border-radius: 5px;
   width: 15px;
@@ -288,7 +288,7 @@ border-radius: 5px;
   margin-top: 20px;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
-.add-my-project .container-form form .upload-image {
+.upload-image {
   cursor: pointer;
   display: flex;
   width: 600px;
@@ -300,12 +300,12 @@ border-radius: 5px;
   background: white;
   box-shadow: 3px 5px 8px 3px rgba(197, 194, 194, 0.945);
 }
-.add-my-project .container-form form .upload-image label {
+.upload-image label {
   cursor: pointer;
   display: flex;
 }
 
-.add-my-project .container-form form .upload-image label p {
+.upload-image label p {
   cursor: pointer;
   flex: 1;
   width: 100px;
@@ -317,7 +317,7 @@ border-radius: 5px;
   border-radius: 4px;
 }
 
-.add-my-project .container-form form .upload-image label img {
+.upload-image label img {
   width: 30px;
   height: 30px;
   margin-top: 10px;
@@ -325,7 +325,7 @@ border-radius: 5px;
   margin-left: 450px;
   justify-content: center;
 }
-.add-my-project .container-form form .button-group button{
+.button-group button{
   color: whitesmoke;
   width: 150px;
   height: 35px;
@@ -342,59 +342,62 @@ border-radius: 5px;
 }
 
 /* my project */
-.my-project {
-  background-color : whitesmoke;
-  padding: 50px;
+  .my-project {
+    background-color : whitesmoke;
+    padding: 50px;
 }
 
-.my-project h1 {
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-bottom: 50px;
+  .my-project h1 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 50px;
 }
-.my-project .project-list {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* project content */
-  
-  .my-project .project-list .project-list-item {
+  .project-list-item {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 570px;
-  background-color: white;
+  background: white;
   box-shadow: 1px 3px 5px 3px rgba(71, 71, 71, 0.534);
-  margin: auto;
+  padding:5px;
+  margin: 10px auto;
   border: 1px rgba(182, 180, 180, 0.966);
   border-radius: 5px;
   }
   
-  .my-project .project-list .project-list-item .project-image {
-    align-items: center;
-  }
-  
-  .my-project .project-list .project-list-item .project-image img {
-    width: 380px;
-    margin: 10px;
-    border-radius: 5px;
+  .project-image {
+    flex: 1;
     align-content: center;
+    padding: 10px;
   }
   
-  .my-project .project-list .project-list-item .project-content {
+  .project-image img {
+    width: 370px;
+    height: 240px;
+    border-radius: 5px;
+  }
+  
+  .project-content {
     display: block;
   }
 
     
-  .my-project .project-list .project-list-item .project-content h3 a {
+  .project-content h3 a {
     font-family: "poppins";
     padding: 10px;
     color: black;
     font-style: none;
 
   }
-  .my-project .project-list .project-list-item .detail-project-content h5 {
+  .detail-project-content h5 {
     font-family: "poppins";
     margin-left: 10px;
     margin-bottom: 20px;
@@ -402,25 +405,28 @@ border-radius: 5px;
     font-style: none;
   }
   
-  .my-project .project-list .project-list-item .detail-project-content p {
+  .detail-project-content p {
     width: 350px;
+    height: 80px;
+    box-sizing: border-box;
     font-family: "poppins";
     margin-left: 10px;
     margin-bottom: 20px;
     color: black;
     font-style: none;
+    text-size-adjust: 100;
   }
 
-  .my-project .project-list .project-list-item .project-technologies {
+  .project-technologies {
     padding: 10px;
     display: flex;
-    width: 150px;
+    width: 200px;
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 20px;
   }
   
-  .my-project .project-list .project-list-item .project-technologies img {
+  .project-technologies img {
     flex: 100%;
     width: 30px;
     height: 30px;
@@ -429,142 +435,135 @@ border-radius: 5px;
     margin-top: 5px;
   }
 
-  .my-project .project-list .project-list-item .btn-group {
+  .btn-group {
     display: flex;
-    padding: 2px;
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  .btn-group span {
+    margin: 2px;
+  }
+
+  .my-project .project-list .btn-group a {
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    width: 180px;
+    height: 30px;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 10px;
-  }
-  
-  .my-project .project-list .btn-group .btn-edit {
-    color: whitesmoke;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    background-color: black;
-    width: 170px;
-    height: 30px;
-    border-radius: 5px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    margin-top: 30px;
-    margin-left: 5px;
-
-  }
-
-  .my-project .project-list .btn-group .btn-delete {
-    color: whitesmoke;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    width: 170px;
-    height: 30px;
-    background-color: black;
-    border-radius: 5px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    margin-top: 30px;
-    margin-right: 5px;
   }
 
 /* Bagian Project */
 
-.main-project-container h1 {
-  text-align: center;
-  margin: 40px auto 40px auto;
+  .main-project-container h1 {
+    text-align: center;
+    margin: 40px auto 40px auto;
 }
 
-.content {
-  margin: 30px 50px 30px 50px;
+  .content {
+    margin: 30px 50px 30px 50px;
 }
 
-.project-header-container {
-  display: flex;
-  height: 400px;
+  .project-header-container {
+    display: flex;
+    height: 400px;
 }
 
-.header-leftside {
-  flex: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .header-leftside {
+    flex: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-leftside img {
-  height: 100%;
-  width: 80%;
+  .header-leftside img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
 
 }
 
-.header-rightside {
-  flex: 30%;
+  .header-rightside {
+    flex: 30%;
+    margin-left: 50px;
 }
 
-h3 {
-  display: block;
+  h3 {
+    display: block;
+    margin-bottom: 10px;
 }
 
-div img {
-  width: 30px;
+  div img {
+    width: 30px;
 }
 
-.header-duration {
-  display: flex;
-  flex-direction: column;
+  .header-duration {
+    display: flex;
+    flex-direction: column;
 }
 
-.header-duration-tanggal {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  .header-duration-tanggal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.header-duration-tanggal img {
-  margin-right: 20px;
+  .header-duration-tanggal img {
+    margin-right: 20px;
 }
 
-.header-duration-waktu {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  .header-duration-waktu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.header-duration-waktu img {
-  margin-right: 20px;
+  .header-duration-waktu img {
+    margin-right: 20px;
 }
 
-.header-tech {
-  display: flex;
+  .header-tech {
+    display: flex;
 }
 
-.header-tech img {
-  margin-right: 20px;
+  .header-tech img {
+    margin-right: 20px;
 }
 
-.header-tech-leftside {
-  flex: 1;
+  .header-tech-leftside {
+    flex: 1;
 }
 
-.header-tech-leftside div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  .header-tech-leftside div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.header-tech-rightside {
-  flex: 1;
+  .header-tech-rightside {
+    flex: 1;
 }
 
-.header-tech-rightside div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  .header-tech-rightside div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-div span {
-  font-size: 14px;
-  font-weight: bold;
+  div span {
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.content p {
+  .content p {
   text-align: justify;
 }
