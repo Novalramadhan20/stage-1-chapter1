@@ -311,9 +311,9 @@ border-radius: 5px;
   width: 100px;
   height: 48px;
   padding: 15px;
-  background-color: grey;
-  font-style: normal grey;
-  border: 1px solid gray;
+  background-color: rgb(202 198 198);
+  color: #868585;
+  border: 1px solid #b1abab;
   border-radius: 4px;
 }
 
@@ -406,6 +406,7 @@ border-radius: 5px;
   }
   
   .detail-project-content p {
+    align-content: center;
     width: 350px;
     height: 80px;
     box-sizing: border-box;
@@ -414,7 +415,6 @@ border-radius: 5px;
     margin-bottom: 20px;
     color: black;
     font-style: none;
-    text-size-adjust: 100;
   }
 
   .project-technologies {
@@ -467,10 +467,12 @@ border-radius: 5px;
   .main-project-container h1 {
     text-align: center;
     margin: 40px auto 40px auto;
+    font-family: "poppins";
 }
 
   .content {
     margin: 30px 50px 30px 50px;
+    
 }
 
   .project-header-container {
@@ -500,6 +502,7 @@ border-radius: 5px;
   h3 {
     display: block;
     margin-bottom: 10px;
+    font-family: "poppins";
 }
 
   div img {
@@ -562,8 +565,10 @@ border-radius: 5px;
   div span {
     font-size: 14px;
     font-weight: bold;
+    font-family: "poppins";
 }
 
   .content p {
   text-align: justify;
+  font-family: "poppins";
 }
